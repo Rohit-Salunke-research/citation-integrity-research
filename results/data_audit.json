@@ -1,0 +1,20 @@
+{
+  "source_repository": "https://github.com/ScienceNLP-Lab/Citation-Integrity",
+  "source_path": "Data/multivers-format/",
+  "source_blob_shas": {
+    "claims-train.jsonl": "0b25ca63c8e1ef79fabdeb77450fa845532c4ed6",
+    "claims-dev.jsonl": "e1ddc68412ffd3b65512327267a18cd668d968b4",
+    "claims-test.jsonl": "754eb9aa7b4c0d076910e0c0f76fab7684e96eec",
+    "corpus.jsonl": "a62f42f63bf1dcd6de8d43d96968588c7a5600b7"
+  },
+  "corpus_documents": 8515,
+  "train_claims": 2141,
+  "dev_claims": 316,
+  "test_claims": 606,
+  "dev_claims_with_sentence_gold": 255,
+  "test_claims_with_sentence_gold": 487,
+  "test_claims_without_sentence_gold": 119,
+  "missing_cited_document_references": 0,
+  "missing_gold_document_references": 0,
+  "evaluation_note": "Claims without annotated sentence-level gold evidence were excluded from Recall/MRR@10 aggregation. No evidence labels were collapsed into citation-accuracy classes."
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "Sarol et al. (2024) Citation-Integrity, MultiVerS format",
+  "candidate_pool": "all abstract sentences in cited_doc_ids",
+  "gold_definition": "all (doc_id, sentence_index) pairs in evidence",
+  "retrievers": [
+    "tfidf",
+    "bm25"
+  ],
+  "tfidf": {
+    "ngram_range": [
+      1,
+      1
+    ],
+    "sublinear_tf": true,
+    "lowercase": true
+  },
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "k_values": [
+    5,
+    10
+  ],
+  "primary_metrics": [
+    "recall@5",
+    "recall@10",
+    "mrr@10"
+  ],
+  "overlap_analysis": "development-derived quartile thresholds applied unchanged to test",
+  "seed": 13,
+  "test_policy": "one final evaluation after code and protocol are frozen"
+}

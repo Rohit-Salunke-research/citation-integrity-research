@@ -1,0 +1,17 @@
+Environment used for repository-assembly checks
+
+Python: 3.13.5
+NumPy: 2.3.5
+pandas: 2.2.3
+Matplotlib: 3.10.8
+scikit-learn: 1.8.0
+pytest: 9.0.2
+
+Validation performed in this environment:
+- Python compilation check: passed
+- Unit tests: 5 passed
+- Dataset download / full pipeline: not run; outbound DNS resolution for github.com was unavailable in the assembly container
+
+This is the repository-assembly test environment. It is not asserted to be the environment used for the packaged benchmark aggregates. Record the independent reproduction environment separately in the experiment log.
+
+Platform: Linux-6.18.57-x86_64-with-glibc2.41

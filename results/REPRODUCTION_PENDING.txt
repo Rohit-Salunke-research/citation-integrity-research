@@ -1,0 +1,7 @@
+The aggregate result tables and figures in this package are outputs of the recorded experiment run.
+The raw source JSONL files and per-claim prediction JSONL files are not bundled.
+For an independent local reproduction, follow README.md in order: download_data.py,
+audit_data.py, run_experiment.py for dev, run_experiment.py for test, evaluate.py,
+and paired_bootstrap.py. Preserve the generated prediction files and execution environment
+record in the final GitHub repository. Do not describe local reproduction as complete until
+these commands have been run and checked.

@@ -1,0 +1,3 @@
+Packaged experiment artifacts are included in this directory. The aggregate CSVs and figures are supplied by the reviewed experiment bundle and have not yet been independently regenerated in this repository environment.
+
+To independently reproduce them, run the commands in the README after downloading the official dataset. Do not describe independent local reproduction as complete until the commands finish and outputs have been checked.
