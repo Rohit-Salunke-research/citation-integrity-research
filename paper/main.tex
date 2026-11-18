@@ -28,7 +28,7 @@ Classical lexical ranking is still a valuable baseline thanks to it being relati
 \section{Dataset and Task}
 We query the public Citation-Integrity corpus in MultiVerS format \cite {citationintegrityrepo}. The repository details article-level splits of 70 training, 10 development, and 20 test reference articles. The retrieved files include 2,141 training, 316 development, and 606 test claim records, along with 8,515 corpus documents. All cited-document and gold-document references in the retrieved splits resolve to the corpus.
 
-Candidate pools for each citation context is all of the abstract sentences from the cited\doc\ids. For each record, a gold item is (doc id, sentence index) pairs that appear in the evidence field. The test split includes 487 records with at least one sentence annotated as evidence, and so have sentence-level gold items, while 119 records are without any sentence golds and are not scored for retrieval. This is evidence retrieval with the provided citation pool, not open literature search.
+Candidate pools for each citation context consist of all abstract sentences from the cited documents identified by \texttt{cited\_doc\_ids}. For each record, gold items are (document ID, sentence index) pairs that appear in the evidence field. The test split includes 487 records with at least one sentence annotated as evidence, and so have sentence-level gold items, while 119 records are without any sentence golds and are not scored for retrieval. This is evidence retrieval with the provided citation pool, not open literature search.
 
 \section{Methods}
 \subsection{Task formulation}
